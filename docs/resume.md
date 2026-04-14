@@ -20,6 +20,8 @@ title: Résumé du projet
 
 > Présentez en un court texte cohérent : le contexte général, la problématique ou question centrale, la proposition retenue.
 
+La démarche s’est faite en itérations, en validant d’abord [élément critique] puis en intégrant [élément clé]. Les décisions ont été guidées par [critère principal].
+
 ## Méthodologie et analyse
 
 > Résumez la démarche suivie pour analyser le problème et orienter la solution :
