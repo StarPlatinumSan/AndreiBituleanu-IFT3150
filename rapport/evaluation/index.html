@@ -616,6 +616,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tests & Évaluation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -632,6 +650,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#validation-realisee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation réalisée
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limites
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -721,6 +791,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#validation-realisee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation réalisée
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Limites
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -740,6 +851,26 @@
 
 
 <h1 id="evaluation-tests">Évaluation &amp; Tests<a class="headerlink" href="#evaluation-tests" title="Permanent link">&para;</a></h1>
+<h2 id="validation-realisee">Validation réalisée<a class="headerlink" href="#validation-realisee" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Tests manuels sur récits courts et moyens pour vérifier l'extraction d'entités.</li>
+<li>Génération d'images pour chaque entité et comparaison avec les traits.</li>
+<li>Édition par sketch puis validation que les nouveaux traits sont pris en compte.</li>
+<li>Réécriture du texte et vérification de la cohérence avec les images.</li>
+</ul>
+<h2 id="observations">Observations<a class="headerlink" href="#observations" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Les LLM locaux sont plus lents et moins fiables sur des prompts longs.</li>
+<li>OpenAI fournit des extractions et réécritures plus stables.</li>
+<li>La régénération globale via ComfyUI réduit les artefacts du sketch, au prix d'un temps de rendu plus long.</li>
+</ul>
+<h2 id="limites">Limites<a class="headerlink" href="#limites" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Absence d'étude utilisateur formelle ou de métriques quantitatives.</li>
+<li>Dépendance à la qualité des descriptions initiales.</li>
+<li>Coût et latence variables selon l'infrastructure IA utilisée.</li>
+</ul>
+<p>Une évaluation plus formelle pourrait être menée avec des auteurs externes et des scénarios d'écriture comparatifs.</p>
 
 
 

@@ -560,6 +560,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conception
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -576,6 +594,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#principe-directeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principe directeur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pipeline-fonctionnel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pipeline fonctionnel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modele-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modèle de données
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interface
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -721,6 +802,58 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#principe-directeur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principe directeur
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pipeline-fonctionnel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pipeline fonctionnel
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modele-de-donnees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modèle de données
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interface
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -740,6 +873,27 @@
 
 
 <h1 id="conception">Conception<a class="headerlink" href="#conception" title="Permanent link">&para;</a></h1>
+<h2 id="principe-directeur">Principe directeur<a class="headerlink" href="#principe-directeur" title="Permanent link">&para;</a></h2>
+<p>L'IA est utilisée comme un outil d'assistance à la créativité. L'utilisateur conserve le contrôle, et les traits visuels en labels servent de source de vérité pour la génération et la réécriture.</p>
+<h2 id="pipeline-fonctionnel">Pipeline fonctionnel<a class="headerlink" href="#pipeline-fonctionnel" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Analyse du texte narratif pour extraire les entités et leurs traits physiques.</li>
+<li>Génération d'images à partir des traits sous forme de labels.</li>
+<li>Édition visuelle par sketch, puis déduction des nouveaux traits.</li>
+<li>Régénération d'image et proposition de réécriture du texte alignée.</li>
+</ol>
+<h2 id="modele-de-donnees">Modèle de données<a class="headerlink" href="#modele-de-donnees" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Une entité est décrite par un nom, un type et une liste de traits physiques.</li>
+<li>Une image est associée à une entité et à une version des traits.</li>
+<li>Toute modification d'image met à jour les traits, puis relance la génération.</li>
+</ul>
+<h2 id="interface">Interface<a class="headerlink" href="#interface" title="Permanent link">&para;</a></h2>
+<p>La conception vise une interface qui facilite:
+- l'édition du texte narratif,
+- la visualisation des entités et de leurs traits,
+- la génération et l'édition d'images par un canvas,
+- la validation ou le rejet des réécritures proposées.</p>
 
 
 

@@ -79,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#implementation" class="md-skip">
+          Aller au contenu
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -580,6 +585,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Implémentation
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -597,6 +622,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stack-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stack technique
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backend
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontend
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonctionnalites-livrees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonctionnalités livrées
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -711,6 +799,60 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stack-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stack technique
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backend
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frontend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Frontend
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonctionnalites-livrees" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonctionnalités livrées
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -730,9 +872,35 @@
   
 
 
-  <h1>Implémentation</h1>
-
-
+<h1 id="implementation">Implémentation<a class="headerlink" href="#implementation" title="Permanent link">&para;</a></h1>
+<h2 id="stack-technique">Stack technique<a class="headerlink" href="#stack-technique" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Frontend en React + TypeScript.</li>
+<li>Backend Node.js/Express en TypeScript servant de proxy IA.</li>
+<li>LLM via OpenAI, avec option de LLM local via LM Studio.</li>
+<li>Génération et édition d'images via ComfyUI.</li>
+</ul>
+<h2 id="backend">Backend<a class="headerlink" href="#backend" title="Permanent link">&para;</a></h2>
+<p>Le serveur expose des endpoints dédiés:
+- <code>/api/llm</code> pour l'extraction d'entités et la réécriture du texte.
+- <code>/api/image</code> pour la génération d'images à partir des traits.
+- <code>/api/image/edit</code> pour les éditions à partir d'un sketch et d'un prompt.</p>
+<p>La pipeline ComfyUI comprend l'upload, le workflow, le polling d'historique et un retour en base64 pour plus de stabilité côté frontend.</p>
+<h2 id="frontend">Frontend<a class="headerlink" href="#frontend" title="Permanent link">&para;</a></h2>
+<p>L'interface propose:
+- un éditeur de texte et le choix du fournisseur IA,
+- une liste d'entités avec gestion des labels,
+- des cartes d'images avec un bouton d'édition,
+- un éditeur de dessin (pinceau, gomme, masque, taille, couleurs),
+- une file d'attente pour gérer plusieurs générations.</p>
+<h2 id="fonctionnalites-livrees">Fonctionnalités livrées<a class="headerlink" href="#fonctionnalites-livrees" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Extraction automatique des entités et traits physiques.</li>
+<li>Génération d'images guidées par labels.</li>
+<li>Édition par sketch avec régénération globale cohérente.</li>
+<li>Réécriture du texte alignée sur l'apparence visuelle.</li>
+<li>Mesure de performance (<code>durationMs</code>) pour suivre les temps de traitement.</li>
+</ul>
 
 
 
