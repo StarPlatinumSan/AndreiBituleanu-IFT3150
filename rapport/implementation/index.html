@@ -682,6 +682,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#dossiers-principaux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dossiers principaux
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -852,6 +863,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#dossiers-principaux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dossiers principaux
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -882,17 +904,19 @@
 </ul>
 <h2 id="backend">Backend<a class="headerlink" href="#backend" title="Permanent link">&para;</a></h2>
 <p>Le serveur expose des endpoints dédiés:
-- <code>/api/llm</code> pour l'extraction d'entités et la réécriture du texte.
-- <code>/api/image</code> pour la génération d'images à partir des traits.
-- <code>/api/image/edit</code> pour les éditions à partir d'un sketch et d'un prompt.</p>
+<code>/api/llm</code> pour l'extraction d'entités et la réécriture du texte.
+<code>/api/image</code> pour la génération d'images à partir des traits.
+<code>/api/image/edit</code> pour les éditions à partir d'un sketch et d'un prompt.</p>
 <p>La pipeline ComfyUI comprend l'upload, le workflow, le polling d'historique et un retour en base64 pour plus de stabilité côté frontend.</p>
 <h2 id="frontend">Frontend<a class="headerlink" href="#frontend" title="Permanent link">&para;</a></h2>
-<p>L'interface propose:
-- un éditeur de texte et le choix du fournisseur IA,
-- une liste d'entités avec gestion des labels,
-- des cartes d'images avec un bouton d'édition,
-- un éditeur de dessin (pinceau, gomme, masque, taille, couleurs),
-- une file d'attente pour gérer plusieurs générations.</p>
+<p>L'interface propose:</p>
+<ul>
+<li>un éditeur de texte et le choix du fournisseur IA,</li>
+<li>une liste d'entités avec gestion des labels,</li>
+<li>des cartes d'images avec un bouton d'édition,</li>
+<li>un éditeur de dessin (pinceau, gomme, masque, taille, couleurs),</li>
+<li>une file d'attente pour gérer plusieurs générations.</li>
+</ul>
 <h2 id="fonctionnalites-livrees">Fonctionnalités livrées<a class="headerlink" href="#fonctionnalites-livrees" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Extraction automatique des entités et traits physiques.</li>
@@ -900,6 +924,17 @@
 <li>Édition par sketch avec régénération globale cohérente.</li>
 <li>Réécriture du texte alignée sur l'apparence visuelle.</li>
 <li>Mesure de performance (<code>durationMs</code>) pour suivre les temps de traitement.</li>
+</ul>
+<h2 id="dossiers-principaux">Dossiers principaux<a class="headerlink" href="#dossiers-principaux" title="Permanent link">&para;</a></h2>
+<ul>
+<li>La majorité du frontend et backend se retrouve dans les dossiers suivants:</li>
+<li>src/view/imageView</li>
+<li>src/model/prompts/textExtractors</li>
+<li>src/model/prompts/textEditors</li>
+<li>src/model/prompts/utils</li>
+<li>src/model</li>
+<li>src/view</li>
+<li>server</li>
 </ul>
 
 

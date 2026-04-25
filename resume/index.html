@@ -922,39 +922,28 @@
 </style>
 
 <h1 id="resume-du-projet">Résumé du projet<a class="headerlink" href="#resume-du-projet" title="Permanent link">&para;</a></h1>
-<blockquote>
-<p><img alt="💡" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f4a1.png" title=":bulb:" /> Cette page présente une <strong>synthèse courte</strong> du projet.
-Elle doit pouvoir être comprise sans lire le rapport complet.<br />
-N'oubliez pas d’effacer ou de mettre en commentaires les notes (<code>&gt;</code>) avant la remise finale.</p>
-</blockquote>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Présentez en un court texte cohérent : le contexte général, la problématique ou question centrale, la proposition retenue.</p>
-</blockquote>
-<p>La démarche s’est faite en itérations, en validant d’abord [élément critique] puis en intégrant [élément clé]. Les décisions ont été guidées par [critère principal].</p>
+<p>Mon projet part d’un problème simple: pendant l’écriture d’un récit, il est difficile de vérifier rapidement si les descriptions textuelles des personnages, objets et lieux restent cohérentes. L’idée retenue a donc été de construire un outil d’écriture visuelle assisté par IA qui transforme un texte narratif en entités + traits visuels, génère des images à partir de ces traits, puis permet de réécrire le texte en fonction des modifications visuelles validées par l’auteur.</p>
 <h2 id="methodologie-et-analyse">Méthodologie et analyse<a class="headerlink" href="#methodologie-et-analyse" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Résumez la démarche suivie pour analyser le problème et orienter la solution :
-grandes étapes, itérations, validations majeures.</p>
-<p>Ne détaillez pas le suivi ni la planification fine.</p>
-</blockquote>
+<p>J’ai travaillé en itérations courtes: valider d’abord un flux minimal, puis ajouter une couche de complexité seulement quand la précédente était stable. L’analyse initiale a confirmé trois besoins principaux: rendre les éléments narratifs visibles, permettre des corrections progressives, et garder un système explicable.</p>
+<p>Cette approche m’a amené à privilégier des labels de traits comme pivot central, car ils rendent les décisions de génération plus contrôlables et limitent les dérives de l’IA quand on modifie les images.</p>
 <h2 id="architecture-et-conception">Architecture et conception<a class="headerlink" href="#architecture-et-conception" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Décrivez la structure générale de la solution et les principaux choix de conception.</p>
-<p>Restez au niveau conceptuel sans entrer dans les détails d’implémentation.</p>
-</blockquote>
+<p>La solution suit une boucle unifiée en quatre étapes: analyse du texte, génération d’image, édition visuelle, puis réécriture du texte. Le choix clé de conception est que les traits visuels en labels servent de source de vérité entre toutes les composantes (texte et image).</p>
+<p>Conceptuellement, l’outil sépare clairement le narratif (texte), la structure (traits), et le visuel (images), ce qui facilite les ajustements progressifs sans casser la cohérence globale.</p>
 <h2 id="resultats-et-realisations">Résultats et réalisations<a class="headerlink" href="#resultats-et-realisations" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Décrivez ce qui a été concrètement produit à la fin du projet (prototype, système fonctionnel, analyses, démonstration, etc.).</p>
-</blockquote>
+<p>Le projet a abouti à un prototype fonctionnel complet avec:
+- extraction automatique d’entités et de traits physiques depuis un texte narratif;
+- génération d’images pilotée par labels;
+- édition par sketch sur canvas avec interprétation des modifications;
+- régénération cohérente de l’image à partir des nouveaux traits;
+- proposition de réécriture du texte alignée sur l’apparence visuelle obtenue.</p>
+<p>Le système supporte un mode IA distante (OpenAI) et un mode IA locale (LM Studio), avec ComfyUI pour la partie image.</p>
 <h2 id="evaluation-et-limites">Évaluation et limites<a class="headerlink" href="#evaluation-et-limites" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Résumez comment la solution a été évaluée et identifiez ses limites principales.</p>
-</blockquote>
+<p>L’évaluation a été faite par tests manuels sur plusieurs récits et scénarios d’édition (avant/après sketch, cohérence des traits, cohérence texte-image). Les résultats montrent que l’approche par labels améliore la stabilité du pipeline et rend les corrections plus lisibles pour l’utilisateur.</p>
+<p>Les limites actuelles restent le temps de génération, la variabilité des performances selon le fournisseur IA, et l’absence d’étude utilisateur formelle avec métriques quantitatives.</p>
 <h2 id="conclusion-et-perspectives">Conclusion et perspectives<a class="headerlink" href="#conclusion-et-perspectives" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Concluez sur l’apport du projet et les pistes possibles pour une suite.</p>
-</blockquote>
+<p>Ce projet démontre qu’un assistant d’écriture visuelle peut réellement aider à détecter et corriger les incohérences descriptives sans retirer le contrôle créatif à l’auteur. L’apport principal est la boucle texte-image-réécriture centrée sur des traits explicites, qui rend l’IA plus prévisible et plus utile en pratique.</p>
+<p>Pour la suite, je viserais une évaluation utilisateur plus formelle, une optimisation des performances de génération, et l’ajout de métriques automatiques de cohérence texte-image.</p>
 
 
 
