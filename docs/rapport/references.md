@@ -1,4 +1,4 @@
-# Références
+﻿# Références
 
 - https://github.com/m-damien/VisualStoryWriting
 - https://diro.umontreal.ca/repertoire-departement/professeurs/professeur/in/in37834/sg/Damien%20Masson/

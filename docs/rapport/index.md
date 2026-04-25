@@ -1,4 +1,4 @@
-# Introduction
+﻿# Introduction
 
 Ce projet informatique s'inscrit dans le domaine de l'interaction humain-machine (HCI) et de l'usage de l'intelligence artificielle comme outil d'assistance à la créativité. Il part du constat qu'il existe peu d'outils capables d'aider concrètement les auteurs à visualiser et ajuster les descriptions physiques d'un récit, ou à repérer rapidement les incohérences entre texte et visuel.
 

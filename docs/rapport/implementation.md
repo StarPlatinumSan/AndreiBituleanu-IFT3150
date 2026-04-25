@@ -1,4 +1,4 @@
-# Implémentation
+﻿# Implémentation
 
 ## Stack technique
 - Frontend en React + TypeScript.

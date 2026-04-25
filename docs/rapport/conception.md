@@ -1,4 +1,4 @@
-# Conception
+﻿# Conception
 
 ## Principe directeur
 L'IA est utilisée comme un outil d'assistance à la créativité. L'utilisateur conserve le contrôle, et les traits visuels en labels servent de source de vérité pour la génération et la réécriture.

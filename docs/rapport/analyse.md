@@ -1,4 +1,4 @@
-# Études préliminaires
+﻿# Études préliminaires
 
 ## Constat
 Les outils d'écriture existants sont majoritairement textuels et offrent peu de retours visuels sur les descriptions physiques ou la cohérence d'un récit. Cela rend plus difficile la détection d'incohérences et ralentit l'itération créative, en particulier lorsque l'auteur veut vérifier l'apparence d'un personnage, d'un lieu ou d'un objet.

@@ -1,4 +1,4 @@
-# Évaluation & Tests
+﻿# Évaluation & Tests
 
 ## Validation réalisée
 - Tests manuels sur récits courts et moyens pour vérifier l'extraction d'entités.
