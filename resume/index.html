@@ -923,7 +923,7 @@
 
 <h1 id="resume-du-projet">Résumé du projet<a class="headerlink" href="#resume-du-projet" title="Permanent link">&para;</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p>Mon projet part d’un problème simple: pendant l’écriture d’un récit, il est difficile de vérifier rapidement si les descriptions textuelles des personnages, objets et lieux restent cohérentes. L’idée retenue a donc été de construire un outil d’écriture visuelle assisté par IA qui transforme un texte narratif en entités + traits visuels, génère des images à partir de ces traits, puis permet de réécrire le texte en fonction des modifications visuelles validées par l’auteur.</p>
+<p>Mon projet tente de résoudre un problème pendant l’écriture d’un récit, il est difficile de vérifier rapidement si les descriptions textuelles des personnages, objets et lieux restent cohérentes. L’idée retenue a donc été de construire un outil d’écriture visuelle assisté par IA qui transforme un texte narratif en entités + traits visuels, génère des images à partir de ces traits, puis permet aux auteurs d'améliorer leurs textes en fonction des modifications et interactions visuelles.</p>
 <h2 id="methodologie-et-analyse">Méthodologie et analyse<a class="headerlink" href="#methodologie-et-analyse" title="Permanent link">&para;</a></h2>
 <p>J’ai travaillé en itérations courtes: valider d’abord un flux minimal, puis ajouter une couche de complexité seulement quand la précédente était stable. L’analyse initiale a confirmé trois besoins principaux: rendre les éléments narratifs visibles, permettre des corrections progressives, et garder un système explicable.</p>
 <p>Cette approche m’a amené à privilégier des labels de traits comme pivot central, car ils rendent les décisions de génération plus contrôlables et limitent les dérives de l’IA quand on modifie les images.</p>
@@ -931,12 +931,14 @@
 <p>La solution suit une boucle unifiée en quatre étapes: analyse du texte, génération d’image, édition visuelle, puis réécriture du texte. Le choix clé de conception est que les traits visuels en labels servent de source de vérité entre toutes les composantes (texte et image).</p>
 <p>Conceptuellement, l’outil sépare clairement le narratif (texte), la structure (traits), et le visuel (images), ce qui facilite les ajustements progressifs sans casser la cohérence globale.</p>
 <h2 id="resultats-et-realisations">Résultats et réalisations<a class="headerlink" href="#resultats-et-realisations" title="Permanent link">&para;</a></h2>
-<p>Le projet a abouti à un prototype fonctionnel complet avec:
-- extraction automatique d’entités et de traits physiques depuis un texte narratif;
-- génération d’images pilotée par labels;
-- édition par sketch sur canvas avec interprétation des modifications;
-- régénération cohérente de l’image à partir des nouveaux traits;
-- proposition de réécriture du texte alignée sur l’apparence visuelle obtenue.</p>
+<p>Le projet a abouti à un prototype fonctionnel complet avec:</p>
+<ul>
+<li>extraction automatique d’entités et de traits physiques depuis un texte narratif;</li>
+<li>génération d’images pilotée par labels;</li>
+<li>édition par sketch sur canvas avec interprétation des modifications;</li>
+<li>régénération cohérente de l’image à partir des nouveaux traits;</li>
+<li>proposition de réécriture du texte alignée sur l’apparence visuelle obtenue.</li>
+</ul>
 <p>Le système supporte un mode IA distante (OpenAI) et un mode IA locale (LM Studio), avec ComfyUI pour la partie image.</p>
 <h2 id="evaluation-et-limites">Évaluation et limites<a class="headerlink" href="#evaluation-et-limites" title="Permanent link">&para;</a></h2>
 <p>L’évaluation a été faite par tests manuels sur plusieurs récits et scénarios d’édition (avant/après sketch, cohérence des traits, cohérence texte-image). Les résultats montrent que l’approche par labels améliore la stabilité du pipeline et rend les corrections plus lisibles pour l’utilisateur.</p>
